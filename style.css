@@ -1,0 +1,115 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Left Dropdown Button */
+.left-dropdown {
+    position: relative;
+}
+
+.left-dropdown .menu-toggle {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left-dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #555;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    min-width: 150px; /* Add a minimum width to ensure the dropdown is wide enough */
+}
+
+.left-dropdown .dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.left-dropdown .dropdown-menu a:hover {
+    background-color: #666;
+}
+
+/* Navbar Menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu .dropdown {
+    position: relative;
+}
+
+.nav-menu .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #555;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-menu .dropdown-content a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nav-menu .dropdown-content a:hover {
+    background-color: #666;
+}
+
+.nav-menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Active Class for Left Dropdown */
+.left-dropdown .active {
+    display: block;
+}
