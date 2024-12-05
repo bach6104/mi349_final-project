@@ -3,79 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Bach Nguyen's Blog - Explore photography, technology, and my journey as a Computer Science major.">
-    <title>Home - Bach Nguyen's Blog</title>
+    <title>Bach Nguyen's Blog</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body>
 
-    <header id="header">
-        <!-- Left Dropdown Button -->
-        <div class="left-dropdown">
-            <button id="left-menu-toggle" class="menu-toggle">☰</button>
-            <div id="left-menu" class="dropdown-menu">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+        <!-- Left Dropdown Menu -->
+        <div class="dropdown me-auto">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                <li><a class="dropdown-item" href="gundam_blog.html">Gundam</a></li>
+                <li><a class="dropdown-item" href="travel_blog.html">Travelling</a></li>
+            </ul>
+        </div>
+
+        <!-- Center Logo Placeholder -->
+        <a class="navbar-brand mx-auto" href="#">
+            <img src="path-to-your-logo.png" alt="Logo" style="height: 50px;">
+        </a>
+
+        <!-- Right Navbar Links -->
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link text-white" href="index.html">Home</a>
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+        </div>
+    </div>
+</nav>
+    
+
+    <!-- Hero Section -->
+    <header class="hero-section text-white text-center d-flex align-items-center justify-content-center" style="background: url('images/sunset_sitting.jpeg') no-repeat center center/cover; height: 100vh;">
+        <div class="container">
+            <h1 class="display-3">Welcome to My Portfolio</h1>
+            <p class="lead">Exploring photography, technology, and travelling.</p>
+            <a href="#portfolio" class="btn btn-primary btn-lg">View My Work</a>
+        </div>
+    </header>
+        <!-- About Section -->
+        <section id="about" class="container my-5">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Bach Nguyen, a Computer Science major with a minor in Data Science at MSU. I'm also interested in startups, business operations, and the stock market. 
+                Aside from Computer Science and Business, I have hobbies such as photography, particularly landscape and astrophotography, cooking, gaming, and flying. 
+                I've traveled to many places and look forward to exploring more in the future.
+            </p>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>My Hobbies</h3>
+                    <ul>
+                        <li>Photography</li>
+                        <li>Astronomy</li>
+                        <li>Travelling</li>
+                        <li>Building Gundam</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Places I've Been</h3>
+                    <ul>
+                        <li>Vietnam</li>
+                        <li>Singapore</li>
+                        <li>Thailand</li>
+                        <li>United States</li>
+                        <li>Qatar</li>
+                        <li>Taiwan</li>
+                        <li>Japan</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Blogs</h2>
+        <div class="row d-flex justify-content-center">
+            <!-- Blog 1: Gundam Blog -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="gundam_blog.html" class="text-decoration-none">
+                    <div class="card">
+                        <img src="images/gundam2.jpg" class="card-img-top" alt="Gundam">
+                        <div class="card-body">
+                            <h5 class="card-title">Gundam Blog</h5>
+                            <p class="card-text">Dive into the intricate world of Gundam model building, the movie, and the artistry behind it.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Blog 2: Travel Blog -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="travel_blog.html" class="text-decoration-none">
+                    <div class="card">
+                        <img src="images/sunset_plane.jpeg" class="card-img-top" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title">Travel Blog</h5>
+                            <p class="card-text">Join me on adventures across the globe, exploring cultures, cuisines, and breathtaking destinations.</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
-    
-        <h1>Bach Nguyen's Blog</h1>
-    
-        <!-- Navbar for Desktop -->
-        <nav id="navbar">
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Blog Posts</a>
-                    <div class="dropdown-content">
-                        <a href="#">Post 1</a>
-                        <a href="#">Post 2</a>
-                        <a href="#">Post 3</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
-    
-    
+    </div>
+</section>
 
-    <main>
-        <section class="hero-section">
-            <img src="images/sunset_sitting.jpeg" alt="Landscape with Sunset" class="hero-image">
-            <h2>Welcome to My Journey</h2>
-            <p>Discover my passions in photography, technology, and the exciting world of exploration. Learn more about my work and connect with me!</p>
-        </section>
 
-        <section class="three-column">
-            <div class="column">
-                <h3>Photography</h3>
-                <p>Capture the beauty of the world through my lens. Landscape, astrophotography, and more await!</p>
-            </div>
-            <div class="column">
-                <h3>Technology</h3>
-                <p>Explore my projects in computer science, data science, and machine learning.</p>
-            </div>
-            <div class="column">
-                <h3>Travel</h3>
-                <p>Ever since I was a kid, I have been fascinated with the skies and space. Living in Hanoi didn’t offer many chances to see clear night skies, but I made up for it with stunning sunsets.</p>
-            </div>
-        </section>
-    </main>
 
-    <footer>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
         <p>© 2024 Bach Nguyen. All Rights Reserved.</p>
-        <p><a href="contact.html">Get in Touch</a></p>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
-
-
-
-

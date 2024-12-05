@@ -4,45 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Bach Nguyen</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Bach Nguyen's Blog</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="main-content">
-        <aside class="sidebar">
-            <h2>Personal Interests and Engagement</h2>
-            <img src="images/sunset_laptop.jpeg" alt="working laptop under sunset" class="profile-image">
-            <ul class="contact-points">
-                <li>Having any questions about photography or interested in any of my hobbies ?</li>
-                <li>Interested in discussing technology, design, or my latest projects ?</li>
-                <li>Having comments or any improvements on my website<li>
-                <p>Feel free to leave your contact here and I will contact you as soon as possible. Let’s connect!</p>
+<!-- Navbar (same as index) -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+        <div class="dropdown me-auto">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Menu
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                <li><a class="dropdown-item" href="gundam_blog.html">Gundam</a></li>
+                <li><a class="dropdown-item" href="astronomy_blog.html">Astronomy</a></li>
+                <li><a class="dropdown-item" href="travel_blog.html">Travelling</a></li>
             </ul>
-        </aside>
-        
+        </div>
 
-        <section class="main-column">
-            <h2>Contact Form</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="comment">Comment:</label>
-                <textarea id="comment" name="comment" rows="4" required></textarea>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+        <a class="navbar-brand mx-auto" href="#">
+            <img src="path-to-your-logo.png" alt="Logo" style="height: 50px;">
+        </a>
+
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link text-white" href="index.html">Home</a>
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+        </div>
     </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-image: url('images/sunset_laptop.jpeg'); height: 40vh; display: flex; align-items: center; justify-content: center;">
+        <div class="hero-text" style="text-align: center; color: white;">
+            <h1>Contact Me</h1>
+            <p>Let's connect! Have questions, feedback, or comments? Reach out here.</p>
+        </div>
+    </section>
+
+        <!-- Main Content Section -->
+        <section class="container my-5">
+            <div class="row">
+                <!-- Personal Interests Section -->
+                <div class="col-md-6">
+                    <h2>Personal Interests & Engagement</h2>
+                    <p>Do you have questions about photography, technology, or any of my hobbies? Interested in discussing my latest projects? Feel free to get in touch!</p>
+                    <ul>
+                        <li>Discussing photography or any of my hobbies.</li>
+                        <li>Exploring technology, design, or recent projects.</li>
+                        <li>Providing feedback or suggestions for my website.</li>
+                    </ul>
+                    <p>I’ll get back to you as soon as possible. Let’s connect!</p>
+                </div>
+    
+                <!-- Contact Form Section -->
+                <div class="col-md-6">
+                    <h2>Contact Form</h2>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comment" class="form-label">Comment:</label>
+                            <textarea id="comment" name="comment" rows="4" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+<!-- Footer -->
+<footer class="text-center py-3">
+    <p>&copy; 2024 Bach Nguyen's Blog. All Rights Reserved.</p>
+</footer>
+
+    <!-- Bootstrap JS and Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

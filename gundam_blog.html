@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gundam Blog</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar (same as index) -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+        <div class="dropdown me-auto">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Menu
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                <li><a class="dropdown-item" href="gundam_blog.html">Gundam</a></li>
+                <li><a class="dropdown-item" href="travel_blog.html">Travelling</a></li>
+            </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto" href="#">
+            <img src="path-to-your-logo.png" alt="Logo" style="height: 50px;">
+        </a>
+
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link text-white" href="index.html">Home</a>
+            <a class="nav-link text-white" href="#portfolio">Blogs</a>
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Blog Content -->
+<div class="container my-5">
+    <h1 class="text-center mb-5">Gundam Blog</h1>
+
+    <!-- Blog Post Template -->
+    <section class="mb-5">
+        <h2>1. The Legacy of RX-78-2</h2>
+        <p class="text-muted">Published on: <em>December 5, 2024</em></p>
+        <img src="path-to-rx78-image.jpg" class="img-fluid mb-3" alt="Gundam RX-78-2">
+        
+        <!-- Teaser and full content -->
+        <p class="teaser">
+            The RX-78-2 is one of the most iconic mobile suits in the Gundam franchise. It revolutionized the mecha genre...
+        </p>
+        <div class="full-content collapse" id="post1">
+            <p>The RX-78-2 first appeared in the 1979 "Mobile Suit Gundam" series. Its realistic portrayal of warfare and 
+            compelling storylines made it stand out in the mecha anime genre. Its creator, Amuro Ray, quickly became one of the 
+            most beloved pilots...</p>
+        </div>
+        <button class="btn btn-primary toggle-btn" data-bs-toggle="collapse" data-bs-target="#post1">
+            Read More
+        </button>
+    </section>
+
+    <!-- Blog Post 2 -->
+    <section class="mb-5">
+        <h2>2. Wing Gundam Zero's Impact on the 90s</h2>
+        <p class="text-muted">Published on: <em>November 28, 2024</em></p>
+        <img src="path-to-wing-zero-image.jpg" class="img-fluid mb-3" alt="Wing Gundam Zero">
+        
+        <p class="teaser">
+            Wing Gundam Zero is a fan-favorite, renowned for its twin buster rifle capable of destroying colonies...
+        </p>
+        <div class="full-content collapse" id="post2">
+            <p>Wing Gundam Zero became iconic for its "Zero System," which gave pilots extraordinary predictive capabilities 
+            in battle. Its angelic design also set it apart, symbolizing both the beauty and terror of war. It remains a fan 
+            favorite to this day...</p>
+        </div>
+        <button class="btn btn-primary toggle-btn" data-bs-toggle="collapse" data-bs-target="#post2">
+            Read More
+        </button>
+    </section>
+
+    <!-- Add more blog sections as needed -->
+</div>
+
+<!-- Footer -->
+<footer class="text-center py-3">
+    <p>&copy; 2024 Bach Nguyen's Blog. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="index.js"></script>
+
+</body>
+</html>
