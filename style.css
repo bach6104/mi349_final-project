@@ -92,6 +92,27 @@ body {
     object-fit: cover;
 }
 
+.scaled-img {
+    width: 300px; 
+    height: 400px; 
+    object-fit: cover;
+}
+
+.d-flex .teaser, .full-content {
+    margin: 0; /* Align text cleanly with the image */
+}
+
+.me-3 {
+    margin-right: 1rem; /* Space between image and text */
+}
+
+.custom-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Ensures it stays above other elements */
+}
+
+
 /* Responsive Adjustments */
 @media (max-width: 992px) {
     .navbar-nav {
